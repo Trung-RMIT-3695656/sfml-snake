@@ -8,6 +8,8 @@ GameEngine::AssetManager::~AssetManager()
 {
 }
 
+
+// This will manage the asset that we will give to the game
 void GameEngine::AssetManager::AddTexture(int id, const std::string &filePath, bool isRepeated = false){
     auto texture = std::make_unique<sf::Texture>();
 

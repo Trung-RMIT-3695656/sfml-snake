@@ -8,6 +8,7 @@ GameEngine::StateManager::~StateManager() {
 
 }
 
+// this will manage the state of the game
 void GameEngine::StateManager::Add(std::unique_ptr<State> toAdd, bool replace = false){
     m_add = true;
     m_newState = std::move(toAdd);
